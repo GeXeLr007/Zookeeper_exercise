@@ -45,13 +45,13 @@ public class DemoAuth implements Watcher {
         }
 
         try {
-            zkClient.createPersistent(PATH, acls, "init content");
+//            zkClient.createPersistent(PATH, acls, "init content");
             System.out.println("使用授权key：" + correctAuthentication + "创建节点：" + PATH + ", 初始内容是: init content");
         } catch (Exception e) {
             e.printStackTrace();
         }
         try {
-            zkClient.createPersistent(PATH_DEL, acls, "待删节点");
+//            zkClient.createPersistent(PATH_DEL, acls, "待删节点");
             System.out.println("使用授权key：" + correctAuthentication + "创建节点：" + PATH_DEL + ", 初始内容是: init content");
         } catch (Exception e) {
             // TODO Auto-generated catch block
